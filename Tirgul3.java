@@ -39,24 +39,27 @@ public class Main {
         //Targil 10:
         int[]numbers = {12, 18, 20,25,10};
         int x1 = 9;
-        int counter = 0;
+     
         arryNum (numbers, x1);
 
 }
     //Targil 10:
-    private static boolean arryNum(int[] numbers, int x1) {
+    private static boolean isarryNum(int[] numbers, int x1) {
         for (int index = 0; index < numbers.length; index++) {
-            int counter = 0;
-            if (counter == index) {
+             if (numbers[index] == x1)
+             {
+          
                 return (true);
-            } else {
+            } 
+        }
+           
                 return  (false);
             }
 
-        }
+      
 
 
-           }
+       
 
 
 
