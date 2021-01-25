@@ -12,6 +12,152 @@ public class Main {
      //  int k = 5;
       //  changeNumber (k);
       //  System.out.println (k);
+        
+ //10
+        int[] aro = {5,7,9,1,3};
+        checkArray(aro, 5);
+
+
+
+     printHello();
+        numberType(5);
+        numberType((float) 3.2);
+        numberType(2.11111);
+
+        getScanner();
+        //16:
+        int[]arry = {3, 6, 8, 2};
+                  // 0  1  2  3
+
+        randomize(arry);
+        //17:
+
+        printString("Hello");
+
+        //21:
+        sumDigits (125);
+        
+
+
+
+        //20:
+        int[] arraynumbers1 = {2,6,7,8,34,16 };
+        multiPlayZugi (arraynumbers1);
+        addOne (arraynumbers1);
+        setZero (arraynumbers1);
+
+        for (int i=0; i<arraynumbers1.length; i++) {
+            System.out.print (arraynumbers1[i] + " ");
+        }
+
+    }
+     //21:
+     private static int sumDigits (int number) {
+         int sumnumber = 0;
+         do {
+             sumnumber = sumnumber + (number % 10);
+             number /= 10;
+         }
+         while (number!= 0);
+         return sumnumber;
+     }
+
+
+
+
+
+
+
+    //20:
+     private static void multiPlayZugi(int[] arraynumbers1)   {
+        for (int index = 0; index < arraynumbers1.length; index++)   {
+            if(arraynumbers1[index]%2 == 0)  {
+                arraynumbers1[index] *= 2;
+            }
+        }
+     }
+      private static void addOne (int [] arraynumbers1)   {
+        arraynumbers1[5]+=1;
+      }
+      private static void setZero (int[] arraynumbers1)   {
+        for (int index = 0; index < arraynumbers1.length; index++)   {
+            if (arraynumbers1[index]%2 != 0)   {
+                arraynumbers1[index]=0;
+            }
+        }
+      }
+    //10
+    private static boolean checkArray(int[] aro, int num) {
+        int index;
+        for(index = 0; index < aro.length; index++) {
+            if (aro[index] == num)
+                return true;
+        }
+        return false;
+    }
+
+    //16
+      private static int randomize(int[] array) {
+        return array[random.nextInt(array.length)];
+      }
+
+     //Targil 17:
+      private static void printString (String word)   {
+          word += "@@@";
+          printStars(word);
+      }
+      private static void printStars(String word)   {
+          word+= "**";
+        printSulamit();
+      }
+
+    private static void printSulamit() {
+        System.out.println ("Hello Sanaz" + "@@@" + "**" + "#");
+    }
+
+    //Targil 16:
+
+
+    //Targil 14:
+    private static void numberType(int number) {
+        System.out.println ("int");
+    }
+    private static void numberType(float number)   {
+        System.out.println ("float");
+    }
+    private static void numberType(double number)   {
+        System.out.println ("double");
+    }
+
+    //Targil 15:
+    private static Scanner getScanner()   {
+     Scanner scanner = new Scanner (System.in);
+     return scanner;
+    }
+
+
+
+     //Targil 12
+    private static void printHello() {
+        System.out.println ("Hello ");
+        printWord();
+    }
+    private static void printWord()   {
+        System.out.println ("Word");
+    }
+
+
+
+    //Targil 11:
+    private static void printAllIntegerParts(int num)   {
+        for(int index = 1; index <= num; index++)   {
+            if (num%index == 0)   {
+                System.out.println (index);
+            }
+        }
+    }
+
+        }
 
        //Targil 7:
       //  int x = 3;
