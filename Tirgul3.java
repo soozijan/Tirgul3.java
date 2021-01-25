@@ -1,6 +1,7 @@
 public class Main {
     static Scanner scanner = new Scanner (System.in);
-
+    static Random random = new Random ();
+    
     public static <k> void main(String[] args) {
        // greet ();
        // int number = 5;
